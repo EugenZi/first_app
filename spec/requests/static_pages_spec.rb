@@ -45,4 +45,18 @@ describe "Static pages" do
 
 	end
 
+	describe "Contact page" do
+
+		it "should have content 'Contact page'" do
+			visit '/static_pages/contacts'
+			page.should have_selector('h1', :text =>'Contacts page')
+		end
+
+		it "should have side bar" do
+			visit '/static_pages/home'
+		  	page.should have_selector('h3', text: 'Sidebar')
+		end
+
+	end
+
 end
