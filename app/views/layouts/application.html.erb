@@ -47,11 +47,28 @@
           <a class="brand" href="#">FirstApp</a>
           <div class="container nav-collapse">
             <ul class="nav">
+              <li class="divider-vertical"></li>
               <li><%= link_to "Home", "/static_pages/home/"  %></li>
+              <li class="divider-vertical"></li>
               <li><%= link_to "About us", "/static_pages/about/"  %></li>
+              <li class="divider-vertical"></li>
               <li><%= link_to "Contacts", "/static_pages/contacts/"  %></li>
+              <li class="divider-vertical"></li>
               <li><%= link_to "Help", "/static_pages/help/" %></li>
             </ul>
+            <ul class="nav pull-right">
+                      <li class="divider-vertical"></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                        <li><%= link_to "Sign in", "#" %></li>
+                        <li><%= link_to "Sign up", "#" %></li>
+                        <li class="divider"></li>
+                        <li><%= link_to "Profile", "#" %></li>
+                        <li><%= link_to "Sign out", "#" %></li>
+                  </ul>
+                    </li>
+               </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
